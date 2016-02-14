@@ -37,7 +37,7 @@ print(nn) # should be 1
 
 # plot PDF
 p <- ggplot(data = data.frame(x = 0), mapping = aes(x = x))
-p <- p + stat_function(fun = function(x) gauss_ratio_PDF(x, m.x=m.x, s.x=s.x, m.y=m.y, s.y=s.y)) + xlim(-2.0, 6.0)
+p <- p + stat_function(fun = function(x) gauss_ratio_PDF(x, m.x=m.x, s.x=s.x, m.y=m.y, s.y=s.y)/nn) + xlim(-2.0, 6.0)
 print(p)
 
 
